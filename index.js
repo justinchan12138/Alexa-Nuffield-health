@@ -8,9 +8,9 @@ exports.handler = function(event,context) {
       event.session.attributes = {};
     }
     /* 3 types of requests
-    i)   LaunchRequest       Ex: "Open greeter"
-    ii)  IntentRequest       Ex: "Say hello to John" or "ask greeter to say hello to John"
-    iii) SessionEndedRequest Ex: "exit" or error or timeout */
+    i)   LaunchRequest      
+    ii)  IntentRequest      
+    iii) SessionEndedRequest  */
     
     if (request.type === "LaunchRequest") {
         let options = {};
