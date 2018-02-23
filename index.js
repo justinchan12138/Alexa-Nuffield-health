@@ -15,6 +15,13 @@ exports.handler = function(event,context) {
      if(!event.session.attributes) {
       event.session.attributes = {};
     }
+<<<<<<< HEAD
+=======
+    /* 3 types of requests
+    i)   LaunchRequest      
+    ii)  IntentRequest      
+    iii) SessionEndedRequest  */
+>>>>>>> f598c70f70c77c752bad5f04541f3fc07239987b
     
     if (request.type === "LaunchRequest") {
         let options = {};
