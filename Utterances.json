@@ -1,0 +1,96 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "CancelStepOneIntent",
+        "samples": [
+          " I would like to cancel an appointment"
+        ],
+        "slots": []
+      },
+      {
+        "name": "CancelStepThreeIntent",
+        "samples": [
+          " Yes go ahead.",
+          "Yes that is correct",
+          "sure"
+        ],
+        "slots": []
+      },
+      {
+        "name": "CancelStepTwoIntent",
+        "samples": [
+          "I would like to cancel the one on the {date} at {time}"
+        ],
+        "slots": [
+          {
+            "name": "date",
+            "type": "AMAZON.DATE"
+          },
+          {
+            "name": "time",
+            "type": "AMAZON.TIME"
+          }
+        ]
+      },
+      {
+        "name": "MakeBookingStepOneIntent",
+        "samples": [
+          "I would like to make an appointment"
+        ],
+        "slots": []
+      },
+      {
+        "name": "MakeBookingStepThreeIntent",
+        "samples": [
+          "Sure go ahead.",
+          "sure"
+        ],
+        "slots": []
+      },
+      {
+        "name": "MakeBookingStepTwoIntent",
+        "samples": [
+          "On the {date} at {time} "
+        ],
+        "slots": [
+          {
+            "name": "date",
+            "type": "AMAZON.DATE"
+          },
+          {
+            "name": "time",
+            "type": "AMAZON.TIME"
+          }
+        ]
+      },
+      {
+        "name": "QueryStepOneIntent",
+        "samples": [
+          "I would like to check my active appointments"
+        ],
+        "slots": []
+      },
+      {
+        "name": "QueryStepTwoIntent",
+        "samples": [
+          "Yes"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "prototype"
+  }
+}
